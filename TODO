@@ -1,0 +1,13 @@
+
+* Handle comments in configuration files when writing them back.
+
+- Possibly requires implementing a special MySQL configuration file handler
+
+* Have tests use mock database by default and allow tests to connect to real database as an option
+
+* Add examples from old repository
+
+* Read server id from configuration file if none is assigned by the constructor
+
+* Add code for slave promotion
+

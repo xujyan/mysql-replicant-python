@@ -1,0 +1,8 @@
+[mysqld2]
+socket = /var/run/mysqld/mysqld2.sock
+server-id = 2
+datadir = /var/lib/mysql2
+pid-file = /var/run/mysqld/mysqld2.pid
+port = 3308
+report-host = Magic Slave
+

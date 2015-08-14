@@ -1,0 +1,337 @@
+/*!40019 SET @@session.max_insert_delayed_threads=0*/;
+/*!50003 SET @OLD_COMPLETION_TYPE=@@COMPLETION_TYPE,COMPLETION_TYPE=0*/;
+DELIMITER /*!*/;
+# at 4
+#100704  8:23:27 server id 1  end_log_pos 106 	Start: binlog v 4, server v 5.1.41-3ubuntu12.3-log created 100704  8:23:27 at startup
+# Warning: this binlog is either in use or was not closed properly.
+ROLLBACK/*!*/;
+BINLOG '
+3ygwTA8BAAAAZgAAAGoAAAABAAQANS4xLjQxLTN1YnVudHUxMi4zLWxvZwAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAADfKDBMEzgNAAgAEgAEBAQEEgAAUwAEGggAAAAICAgC
+'/*!*/;
+# at 106
+#100704  8:27:48 server id 1  end_log_pos 186 	Query	thread_id=4	exec_time=0	error_code=0
+SET TIMESTAMP=1278224868/*!*/;
+SET @@session.pseudo_thread_id=4/*!*/;
+SET @@session.foreign_key_checks=1, @@session.sql_auto_is_null=1, @@session.unique_checks=1, @@session.autocommit=0/*!*/;
+SET @@session.sql_mode=0/*!*/;
+SET @@session.auto_increment_increment=1, @@session.auto_increment_offset=1/*!*/;
+/*!\C latin1 *//*!*/;
+SET @@session.character_set_client=8,@@session.collation_connection=8,@@session.collation_server=8/*!*/;
+SET @@session.lc_time_names=0/*!*/;
+SET @@session.collation_database=DEFAULT/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 186
+#100704  8:27:48 server id 1  end_log_pos 290 	Query	thread_id=4	exec_time=0	error_code=0
+SET TIMESTAMP=1278224868/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 290
+#100704  8:27:48 server id 1  end_log_pos 394 	Query	thread_id=4	exec_time=0	error_code=0
+SET TIMESTAMP=1278224868/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 394
+#100704  8:27:49 server id 1  end_log_pos 474 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1278224869/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 474
+#100704  8:27:49 server id 1  end_log_pos 578 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1278224869/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 578
+#100704  8:27:49 server id 1  end_log_pos 682 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1278224869/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 682
+#100704  8:27:49 server id 1  end_log_pos 762 	Query	thread_id=6	exec_time=0	error_code=0
+SET TIMESTAMP=1278224869/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 762
+#100704  8:27:49 server id 1  end_log_pos 866 	Query	thread_id=6	exec_time=0	error_code=0
+SET TIMESTAMP=1278224869/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 866
+#100704  8:27:49 server id 1  end_log_pos 970 	Query	thread_id=6	exec_time=0	error_code=0
+SET TIMESTAMP=1278224869/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 970
+#100704  8:27:49 server id 1  end_log_pos 1056 	Query	thread_id=7	exec_time=0	error_code=0
+use test/*!*/;
+SET TIMESTAMP=1278224869/*!*/;
+DROP TABLE IF EXISTS t1
+/*!*/;
+# at 1056
+#100704  8:27:49 server id 1  end_log_pos 1142 	Query	thread_id=7	exec_time=0	error_code=0
+SET TIMESTAMP=1278224869/*!*/;
+CREATE TABLE t1 (a INT)
+/*!*/;
+# at 1142
+#100704  8:27:50 server id 1  end_log_pos 1222 	Query	thread_id=9	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 1222
+#100704  8:27:50 server id 1  end_log_pos 1326 	Query	thread_id=9	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 1326
+#100704  8:27:50 server id 1  end_log_pos 1430 	Query	thread_id=9	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 1430
+#100704  8:27:50 server id 1  end_log_pos 1510 	Query	thread_id=10	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 1510
+#100704  8:27:50 server id 1  end_log_pos 1614 	Query	thread_id=10	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 1614
+#100704  8:27:50 server id 1  end_log_pos 1718 	Query	thread_id=10	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 1718
+#100704  8:27:50 server id 1  end_log_pos 1804 	Query	thread_id=12	exec_time=0	error_code=0
+use test/*!*/;
+SET TIMESTAMP=1278224870/*!*/;
+DROP TABLE IF EXISTS t1
+/*!*/;
+# at 1804
+#100704  8:27:50 server id 1  end_log_pos 1890 	Query	thread_id=12	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+CREATE TABLE t1 (a INT)
+/*!*/;
+# at 1890
+#100704  8:27:50 server id 1  end_log_pos 1982 	Query	thread_id=12	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+INSERT INTO t1 VALUES (1),(2)
+/*!*/;
+# at 1982
+#100704  8:27:50 server id 1  end_log_pos 2074 	Query	thread_id=12	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+INSERT INTO t1 VALUES (3),(4)
+/*!*/;
+# at 2074
+#100704  8:27:50 server id 1  end_log_pos 2158 	Query	thread_id=12	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 2158
+#100704  8:27:50 server id 1  end_log_pos 2266 	Query	thread_id=12	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 2266
+#100704  8:27:50 server id 1  end_log_pos 2374 	Query	thread_id=12	exec_time=0	error_code=0
+SET TIMESTAMP=1278224870/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 2374
+#100704  8:27:51 server id 1  end_log_pos 2460 	Query	thread_id=16	exec_time=0	error_code=0
+SET TIMESTAMP=1278224871/*!*/;
+DROP TABLE IF EXISTS t1
+/*!*/;
+# at 2460
+#100704  8:27:51 server id 1  end_log_pos 2546 	Query	thread_id=16	exec_time=0	error_code=0
+SET TIMESTAMP=1278224871/*!*/;
+CREATE TABLE t1 (a INT)
+/*!*/;
+# at 2546
+#100704  8:27:51 server id 1  end_log_pos 2638 	Query	thread_id=16	exec_time=0	error_code=0
+SET TIMESTAMP=1278224871/*!*/;
+INSERT INTO t1 VALUES (1),(2)
+/*!*/;
+# at 2638
+#100704  8:27:51 server id 1  end_log_pos 2741 	Query	thread_id=16	exec_time=0	error_code=0
+SET TIMESTAMP=1278224871/*!*/;
+CREATE TABLE IF NOT EXISTS dummy (a INT)
+/*!*/;
+# at 2741
+#100704  8:27:51 server id 1  end_log_pos 2836 	Query	thread_id=16	exec_time=0	error_code=0
+SET TIMESTAMP=1278224871/*!*/;
+INSERT INTO dummy VALUES (1),(2)
+/*!*/;
+# at 2836
+#100704  8:27:51 server id 1  end_log_pos 2915 	Query	thread_id=16	exec_time=0	error_code=0
+SET TIMESTAMP=1278224871/*!*/;
+DROP TABLE dummy
+/*!*/;
+# at 2915
+#100704  8:27:51 server id 1  end_log_pos 2994 	Query	thread_id=16	exec_time=0	error_code=0
+SET TIMESTAMP=1278224871/*!*/;
+DROP TABLE dummy
+/*!*/;
+# at 2994
+#100704  9:10:41 server id 1  end_log_pos 3074 	Query	thread_id=18	exec_time=0	error_code=0
+SET TIMESTAMP=1278227441/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 3074
+#100704  9:10:41 server id 1  end_log_pos 3178 	Query	thread_id=18	exec_time=0	error_code=0
+SET TIMESTAMP=1278227441/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 3178
+#100704  9:10:41 server id 1  end_log_pos 3282 	Query	thread_id=18	exec_time=0	error_code=0
+SET TIMESTAMP=1278227441/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 3282
+#100704  9:10:41 server id 1  end_log_pos 3362 	Query	thread_id=19	exec_time=0	error_code=0
+SET TIMESTAMP=1278227441/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 3362
+#100704  9:10:41 server id 1  end_log_pos 3466 	Query	thread_id=19	exec_time=0	error_code=0
+SET TIMESTAMP=1278227441/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 3466
+#100704  9:10:41 server id 1  end_log_pos 3570 	Query	thread_id=19	exec_time=0	error_code=0
+SET TIMESTAMP=1278227441/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 3570
+#100704  9:10:42 server id 1  end_log_pos 3650 	Query	thread_id=20	exec_time=0	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 3650
+#100704  9:10:42 server id 1  end_log_pos 3754 	Query	thread_id=20	exec_time=0	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 3754
+#100704  9:10:42 server id 1  end_log_pos 3858 	Query	thread_id=20	exec_time=0	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 3858
+#100704  9:10:42 server id 1  end_log_pos 3944 	Query	thread_id=21	exec_time=0	error_code=0
+use test/*!*/;
+SET TIMESTAMP=1278227442/*!*/;
+DROP TABLE IF EXISTS t1
+/*!*/;
+# at 3944
+#100704  9:10:42 server id 1  end_log_pos 4030 	Query	thread_id=21	exec_time=0	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+CREATE TABLE t1 (a INT)
+/*!*/;
+# at 4030
+#100704  9:10:42 server id 1  end_log_pos 4110 	Query	thread_id=23	exec_time=0	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 4110
+#100704  9:10:42 server id 1  end_log_pos 4214 	Query	thread_id=23	exec_time=0	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 4214
+#100704  9:10:42 server id 1  end_log_pos 4318 	Query	thread_id=23	exec_time=0	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 4318
+#100704  9:10:42 server id 1  end_log_pos 4398 	Query	thread_id=24	exec_time=0	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 4398
+#100704  9:10:42 server id 1  end_log_pos 4502 	Query	thread_id=24	exec_time=0	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 4502
+#100704  9:10:42 server id 1  end_log_pos 4606 	Query	thread_id=24	exec_time=0	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 4606
+#100704  9:10:42 server id 1  end_log_pos 4692 	Query	thread_id=26	exec_time=0	error_code=0
+use test/*!*/;
+SET TIMESTAMP=1278227442/*!*/;
+DROP TABLE IF EXISTS t1
+/*!*/;
+# at 4692
+#100704  9:10:42 server id 1  end_log_pos 4778 	Query	thread_id=26	exec_time=1	error_code=0
+SET TIMESTAMP=1278227442/*!*/;
+CREATE TABLE t1 (a INT)
+/*!*/;
+# at 4778
+#100704  9:10:43 server id 1  end_log_pos 4870 	Query	thread_id=26	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+INSERT INTO t1 VALUES (1),(2)
+/*!*/;
+# at 4870
+#100704  9:10:43 server id 1  end_log_pos 4962 	Query	thread_id=26	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+INSERT INTO t1 VALUES (3),(4)
+/*!*/;
+# at 4962
+#100704  9:10:43 server id 1  end_log_pos 5046 	Query	thread_id=26	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+DROP USER 'repl_user'
+/*!*/;
+# at 5046
+#100704  9:10:43 server id 1  end_log_pos 5154 	Query	thread_id=26	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+CREATE USER 'repl_user' IDENTIFIED BY 'xyzzy'
+/*!*/;
+# at 5154
+#100704  9:10:43 server id 1  end_log_pos 5262 	Query	thread_id=26	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+GRANT REPLICATION SLAVE ON *.* TO 'repl_user'
+/*!*/;
+# at 5262
+#100704  9:10:43 server id 1  end_log_pos 5348 	Query	thread_id=30	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+DROP TABLE IF EXISTS t1
+/*!*/;
+# at 5348
+#100704  9:10:43 server id 1  end_log_pos 5434 	Query	thread_id=30	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+CREATE TABLE t1 (a INT)
+/*!*/;
+# at 5434
+#100704  9:10:43 server id 1  end_log_pos 5526 	Query	thread_id=30	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+INSERT INTO t1 VALUES (1),(2)
+/*!*/;
+# at 5526
+#100704  9:10:43 server id 1  end_log_pos 5629 	Query	thread_id=30	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+CREATE TABLE IF NOT EXISTS dummy (a INT)
+/*!*/;
+# at 5629
+#100704  9:10:43 server id 1  end_log_pos 5724 	Query	thread_id=30	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+INSERT INTO dummy VALUES (1),(2)
+/*!*/;
+# at 5724
+#100704  9:10:43 server id 1  end_log_pos 5803 	Query	thread_id=30	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+DROP TABLE dummy
+/*!*/;
+# at 5803
+#100704  9:10:43 server id 1  end_log_pos 5882 	Query	thread_id=30	exec_time=0	error_code=0
+SET TIMESTAMP=1278227443/*!*/;
+DROP TABLE dummy
+/*!*/;
+DELIMITER ;
+# End of log file
+ROLLBACK /* added by mysqlbinlog */;
+/*!50003 SET COMPLETION_TYPE=@OLD_COMPLETION_TYPE*/;

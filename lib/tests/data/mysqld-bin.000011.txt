@@ -1,0 +1,59 @@
+/*!40019 SET @@session.max_insert_delayed_threads=0*/;
+/*!50003 SET @OLD_COMPLETION_TYPE=@@COMPLETION_TYPE,COMPLETION_TYPE=0*/;
+DELIMITER /*!*/;
+# at 4
+#100711 23:05:54 server id 1  end_log_pos 106 	Start: binlog v 4, server v 5.1.41-3ubuntu12.3-log created 100711 23:05:54 at startup
+ROLLBACK/*!*/;
+BINLOG '
+MjI6TA8BAAAAZgAAAGoAAAAAAAQANS4xLjQxLTN1YnVudHUxMi4zLWxvZwAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAyMjpMEzgNAAgAEgAEBAQEEgAAUwAEGggAAAAICAgC
+'/*!*/;
+# at 106
+#100711 23:07:25 server id 1  end_log_pos 150 	User_var
+SET @`foo`:=32/*!*/;
+# at 150
+#100711 23:07:25 server id 1  end_log_pos 241 	Query	thread_id=5	exec_time=0	error_code=0
+use test/*!*/;
+SET TIMESTAMP=1278882445/*!*/;
+SET @@session.pseudo_thread_id=5/*!*/;
+SET @@session.foreign_key_checks=1, @@session.sql_auto_is_null=1, @@session.unique_checks=1, @@session.autocommit=1/*!*/;
+SET @@session.sql_mode=0/*!*/;
+SET @@session.auto_increment_increment=1, @@session.auto_increment_offset=1/*!*/;
+/*!\C latin1 *//*!*/;
+SET @@session.character_set_client=8,@@session.collation_connection=8,@@session.collation_server=8/*!*/;
+SET @@session.lc_time_names=0/*!*/;
+SET @@session.collation_database=DEFAULT/*!*/;
+insert into t1 values (@foo)
+/*!*/;
+# at 241
+#100711 23:08:23 server id 1  end_log_pos 309 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1278882503/*!*/;
+BEGIN
+/*!*/;
+# at 309
+#100711 23:08:23 server id 1  end_log_pos 337 	Intvar
+SET INSERT_ID=1/*!*/;
+# at 337
+#100711 23:08:23 server id 1  end_log_pos 467 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1278882503/*!*/;
+insert into employee(name,email) values ('paul','paul@example.com')
+/*!*/;
+# at 467
+#100711 23:08:23 server id 1  end_log_pos 536 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1278882503/*!*/;
+COMMIT
+/*!*/;
+# at 536
+#100711 23:08:40 server id 1  end_log_pos 564 	Intvar
+SET LAST_INSERT_ID=1/*!*/;
+# at 564
+#100711 23:08:40 server id 1  end_log_pos 667 	Query	thread_id=5	exec_time=0	error_code=0
+SET TIMESTAMP=1278882520/*!*/;
+insert into t1 values (last_insert_id())
+/*!*/;
+# at 667
+#100711 23:09:42 server id 1  end_log_pos 712 	Rotate to mysqld1-bin.000012  pos: 4
+DELIMITER ;
+# End of log file
+ROLLBACK /* added by mysqlbinlog */;
+/*!50003 SET COMPLETION_TYPE=@OLD_COMPLETION_TYPE*/;

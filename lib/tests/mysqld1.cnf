@@ -1,0 +1,10 @@
+[mysqld1]
+log-bin-index = mysqld1-bin.index
+socket = /var/run/mysqld/mysqld1.sock
+log-slave-updates
+server-id = 1
+datadir = /var/lib/mysql1
+log-bin = mysqld1-bin
+pid-file = /var/run/mysqld/mysqld1.pid
+port = 3307
+

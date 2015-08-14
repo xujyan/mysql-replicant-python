@@ -1,0 +1,7 @@
+[mysqld3]
+socket = /var/run/mysqld/mysqld3.sock
+server-id = 3
+datadir = /var/lib/mysql3
+pid-file = /var/run/mysqld/mysqld3.pid
+port = 3309
+

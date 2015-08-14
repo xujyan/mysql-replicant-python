@@ -1,0 +1,7 @@
+[mysqld4]
+socket = /var/run/mysqld/mysqld4.sock
+server-id = 4
+datadir = /var/lib/mysql4
+pid-file = /var/run/mysqld/mysqld4.pid
+port = 3310
+
